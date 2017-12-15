@@ -1,5 +1,6 @@
 <template>
     <div class="tool-list">
+        <img src="../assets/logo.png" alt="">
         <i class="tool-btn glyphicon glyphicon-plus" v-on:click="addNote"></i>
         <i class="tool-btn glyphicon glyphicon-star" v-on:click="toggleFavor" v-bind:class="{favor:isFavor}"></i>
         <i class="tool-btn glyphicon glyphicon-remove" v-on:click="deleteNote"></i>
@@ -46,5 +47,10 @@ export default {
 }
 .favor {
     color: blanchedalmond;
+}
+.tool-list img{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
 }
 </style>
